@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{scrartcl}
+\usepackage[left=4cm,right=2cm, top=3cm, bottom=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\KOMAoption{listof}{entryprefix}
+
+
+% =================== - TEXT - =========================
+% for header in komascript documents
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\pagestyle{scrheadings}
+\setkomafont{pageheadfoot}{}
+\ihead{\leftmark}
+\cfoot*{\pagemark} %Pages for heading and plain pages
+\usepackage{enumitem}
+
+% heading spacing
+\usepackage[onehalfspacing]{setspace}
+\parindent 0pt
+\parskip 1.5em
+%citation and  
+\usepackage{csquotes}
+% text symbols
+\usepackage{textcomp}
+
+
+% =================== - GRAPHICS - =====================
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+ 
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+\pgfplotsset{table/search path={3DPlots}}
+\usepackage{tikz-3dplot}
+\usepgfplotslibrary{patchplots}
+\usepgfplotslibrary{ternary}
+
+
+% =============== - MISC - =========================
+\usepackage[
+automake,
+style=super,
+nonumberlist,    % no page numbers
+nogroupskip,     % no space between Acronyms
+acronym,         % create Abbreviations
+toc,             % entry in table of contents
+section]         % show tableOfcontents section-layer
+{}
+
+% ======================================================
+%					- END OF PREAMBLE -
+% ======================================================
+
+\begin{document}
+% ========= - TITLE AND NONPAGECOUNT SITES - ============
+\pagenumbering{Roman}
+\input{Chapters/1_Chapter/0_titlepage.tex}
+
+% ================= - MAIN TEXT PART - =================
+
+\newpage
+\pagenumbering{arabic} 	
+\input{Chapters/1_Chapter/1_Einleitung.tex}
+
+\end{document}
