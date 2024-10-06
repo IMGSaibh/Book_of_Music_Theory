@@ -53,6 +53,9 @@ toc,             % entry in table of contents
 section]         % show tableOfcontents section-layer
 {}
 
+% =============== - MUSIC - =========================
+\usepackage[chorded]{songs}
+
 % ======================================================
 %					- END OF PREAMBLE -
 % ======================================================
@@ -67,5 +70,11 @@ section]         % show tableOfcontents section-layer
 \newpage
 \pagenumbering{arabic} 	
 \input{Chapters/1_Chapter/1_Einleitung.tex}
+
+% \gtab{chord name}{fret:strings:fingering}
+\gtab{C}{032010:032010} \gtab{Cmaj7}{032000:032000}
+\gtab{\raisebox{5.15pt}{\quad F}}{(13321):034000}
+\gtab{\raisebox{5.15pt}{\quad F#}}{2fr:(133211):034200}
+\gtab{D}{000232:000132}
 
 \end{document}
