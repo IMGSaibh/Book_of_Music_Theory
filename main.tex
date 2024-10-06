@@ -15,14 +15,11 @@
 \setkomafont{pageheadfoot}{}
 \ihead{\leftmark}
 \cfoot*{\pagemark} %Pages for heading and plain pages
-\usepackage{enumitem}
 
 % heading spacing
 \usepackage[onehalfspacing]{setspace}
 \parindent 0pt
 \parskip 1.5em
-%citation and  
-\usepackage{csquotes}
 % text symbols
 \usepackage{textcomp}
 
@@ -32,49 +29,30 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage{pdfpages}
- 
-\usepackage{pgfplots}
-\pgfplotsset{compat = newest}
-\pgfplotsset{table/search path={3DPlots}}
-\usepackage{tikz-3dplot}
-\usepgfplotslibrary{patchplots}
-\usepgfplotslibrary{ternary}
 
-
-% =============== - MISC - =========================
-\usepackage[
-automake,
-style=super,
-nonumberlist,    % no page numbers
-nogroupskip,     % no space between Acronyms
-acronym,         % create Abbreviations
-toc,             % entry in table of contents
-section]         % show tableOfcontents section-layer
-{}
 
 % =============== - MUSIC - =========================
-\usepackage[chorded]{songs}
+\usepackage[chorded]{songs} % Paket fuer Akkorddiagramme 
+
 
 % ======================================================
 %					- END OF PREAMBLE -
 % ======================================================
 
 \begin{document}
+
 % ========= - TITLE AND NONPAGECOUNT SITES - ============
 \pagenumbering{Roman}
-\input{Chapters/1_Chapter/0_titlepage.tex}
+\input{0_titlepage.tex}
+\thispagestyle{plain}
+\tableofcontents
 
 % ================= - MAIN TEXT PART - =================
 
 \newpage
-\pagenumbering{arabic} 	
+\pagenumbering{arabic}
 \input{Chapters/1_Chapter/1_Einleitung.tex}
-
-% \gtab{chord name}{fret:strings:fingering}
-\gtab{C}{032010:032010} \gtab{Cmaj7}{032000:032000}
-\gtab{\raisebox{5.15pt}{\quad F}}{(13321):034000}
-\gtab{\raisebox{5.15pt}{\quad F#}}{2fr:(133211):034200}
-\gtab{D}{000232:000132}
+\newpage
+\input{Chapters/2_Grundlagen/Grundlagen.tex}
 
 \end{document}
