@@ -16,6 +16,7 @@
 \ihead{\leftmark}
 \cfoot*{\pagemark} %Pages for heading and plain pages
 \usepackage{enumitem}
+\usepackage{hyperref}
 
 % heading spacing
 \usepackage[onehalfspacing]{setspace}
@@ -23,6 +24,10 @@
 \parskip 1.5em
 % text symbols
 \usepackage{textcomp}
+
+% =================== - Tables - =====================
+\usepackage{tabularx}
+
 
 % =================== - GRAPHICS - =====================
 \usepackage{float}
@@ -33,7 +38,8 @@
 
 % =============== - MUSIC - =========================
 \usepackage[chorded]{songs} % Paket fuer Akkorddiagramme
-
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
 
 % ======================================================
 %					- END OF PREAMBLE -
