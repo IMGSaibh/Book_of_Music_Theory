@@ -1,21 +1,22 @@
 \section{Grundlagen}
 \subsection{Ton und Tonstufe}
-    \textbf{Die Tonstufe} ist ein einzelner Ton einer diatonischen Tonleiter. Als Kernbestand des abendländischen Tonsystems kann man die sieben Tonstufen \textbf{C, D, E, F, G, A und H ansehen, die Stammtöne.} Zwichen den Tonstufen liegt jeweils immer ein Halbtonschritt. Die Tonstufen einer gegebenen Tonleiter werden mit lateinischen Ordinalzahlen benannt. 
+    \textbf{Die Tonstufe} ist ein einzelner Ton einer diatonischen Tonleiter. Als Kernbestand des abendländischen Tonsystems kann man die sieben Tonstufen \textbf{C, D, E, F, G, A und H ansehen, die Stammtöne.} Zwichen den Tonstufen liegt jeweils immer ein Halbtonschritt. Die Tonstufen einer gegebenen Tonleiter werden mit lateinischen Ordinalzahlen benannt.
 
 \begin{table}[H]
     \caption{Tonstufen Steigend}
+    \label{tab:TonstufenSteigend}
     \begin{tabularx}{\textwidth}{|>{\hsize=.3\hsize}X|>{\hsize=.3\hsize}X|>{\hsize=.4\hsize}X|}
     \hline
     Halbtönschritte & Ton & lateinische Ordinalzahlen\\ \hline
     0 & \textbf{C} & \textbf{Reine Prime} \\ \hline
-    1 & Des & Kleine Sekunde \\ \hline
+    1 & Cis & Kleine Sekunde \\ \hline
     2 & \textbf{D} & \textbf{Große Sekunde} \\ \hline
-    3 & Es & Kleine Terz \\ \hline
+    3 & Dis & Kleine Terz \\ \hline
     4 & \textbf{E} & \textbf{Große Terz} \\ \hline
     5 & \textbf{F} & \textbf{Quarte} \\ \hline
     6 & Fis & Tritonus \\ \hline
     7 & \textbf{G} & \textbf{Reine Quinte} \\ \hline
-    8 & As & Kleine Sexte \\ \hline
+    8 & Ais & Kleine Sexte \\ \hline
     9 & \textbf{A} & \textbf{Große Sexte} \\ \hline
     10 & B & Kleine Septime \\ \hline
     11 & \textbf{H} & \textbf{Große Septime} \\ \hline
@@ -23,10 +24,11 @@
     \end{tabularx}
 \end{table}
 
-Grundsätzlich betrachten wir die Tonleitern in steigender oder fallender Reihenfolge. Hauptsächlich hat das etwas mit den Vorzeichen (Versetzungszeichen) zu tun. Die hier erstmal nicht weiter beachten werden.
+Grundsätzlich betrachten wir die Tonleitern in steigender oder fallender Reihenfolge. Wir erkennen, dass bestimmte Töne zwar verschieden geschrieben werden, jedoch gleich klingen, ein \textbf{Cis} klingt wie ein \textbf{Des}. Sie dir dazu mal Halbtonschritt 1 in der Tabelle \ref{tab:TonstufenSteigend} an und in der Tabelle \ref{tab:TonstufenFallend} den Halbtonschritt 11. Hauptsächlich hat das etwas mit dem Vorzeichen (Versetzungszeichen) zu tun. Die hier erstmal nicht weiter beachten werden sollen.
 
 \begin{table}[H]
     \caption{Tonstufen Fallend}
+    \label{tab:TonstufenFallend}
     \begin{tabularx}{\textwidth}{|>{\hsize=.3\hsize}X|>{\hsize=.3\hsize}X|>{\hsize=.4\hsize}X|}
     \hline
     Halbtönschritte & Ton & lateinische Ordinalzahlen\\ \hline
@@ -46,6 +48,19 @@ Grundsätzlich betrachten wir die Tonleitern in steigender oder fallender Reihen
     \end{tabularx}
 \end{table}
 
+Wir fassen alle einzelnen Töne noch einmal zusammen, um einen besseren Überblick zu bekommen welche der Töne gleich klingen aber 2 Bezeichnungen haben. Diese Töne werden im Übrigen enharmonische Töne genannt. In der oberen Zeile lesen wir die Töne steigend (C, D, E, usw.) und hängen somit ein -is- an. Wird wie in der unteren Zeile fallend gelesen (C, H, B, A, usw.), wird ein -es- angehangen. Aus A wird jedoch As und aus H wird B!  
+
+\begin{table}[H]
+    \caption{Töne und Halbtöne}
+    \begin{tabularx}{\textwidth}{|*{12}{>{\footnotesize}X|}}
+    \hline
+    \cellcolor{red!25}C/His & \cellcolor{yellow!25}Cis & D & \cellcolor{green!25}Dis & E & \cellcolor{red!25}Eis/F & \cellcolor{gray!25}Fis & G & \cellcolor{blue!25}Gis & A & \cellcolor{orange!25}Ais & H \\ \hline
+    C & \cellcolor{red!25}H/Ces & \cellcolor{orange!25}B & A & \cellcolor{blue!25}As & G & \cellcolor{gray!25}Ges & F & E & \cellcolor{green!25}Es & D & \cellcolor{yellow!25}Des \\ \hline
+    \end{tabularx}
+\end{table}
+
+Lass dich von den rot markierten Zellen nicht verwirren. Sie stehen für sich. Lesen wir steigend (also die obere Zeile) und sind beim H angekommen geht es von vorn los und somit ist C auch gleichzeitig ein His. Genauso wie beim lessen fallend H auch ein Ces ist. Auch zwischen E und F liegt nur ein Halbtonschritt, sodass Eis und F derselbe Ton ist. 
+
 \subsection{Tonleitern}
 Eine Tonleiter oder Ton-Skala ist in der Musik eine Reihe von der Tonhöhe nach geordneten Tönen, 
 jenseits derer die Tonreihe in der Regel wiederholbar ist. In den meisten Fällen hat eine Tonleiter 
@@ -56,13 +71,13 @@ durch Tonabstände definiert. An erster Stelle steht der Grundton (wie zum Beisp
 C-Dur ist hierfür ein Beispiel. Weitere sind A-Moll, D-Dur usw.
 
 Eine Dur-Tonleiter wird  gebildet, ausgehend vom Grundton, indem jeweils ein Ganztonschritt weiter 
-gesprungen wird. Die \textbf{Stellen von Ton 3 zu 4 und vom Ton 7 zu 8.} sind Ausnahmen. Hier wird nur ein
+gesprungen wird. Die \textbf{Stellen von Ton 3 zu 4 und von Ton 7 zu 8.} sind Ausnahmen. Hier wird nur ein
 Halbtonschritt gesprungen. Analog wird diese Verfahrensweise auch für alle weiteren Grundtöne angewendet. 
 In der Tabelle ist die D Dur-Tonleiter als weiteres Beispiel angegeben. Die Farben markieren den Halbtonschritt.
 
 \begin{table}[H]
     \caption{Tonstufen der Dur-Tonleitern}
-    \begin{tabularx}{\textwidth}{|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|}
+    \begin{tabularx}{\textwidth}{|*{8}{>{\hsize=.1\hsize}X|}}
     \hline
     1. Ton & 2. Ton & 3. Ton & 4. Ton & 5. Ton & 6. Ton & 7. Ton & 8. Ton \\ \hline  
     C & D & \cellcolor{gray!25}E & \cellcolor{gray!25}F & G & A & \cellcolor{gray!25}H & \cellcolor{gray!25}C \\ \hline  
@@ -78,7 +93,7 @@ In der Tabelle ist die A und H Dur-Tonleiter als Beispiel angegeben. Die Farben 
 
 \begin{table}[H]
     \caption{Tonstufen der Moll-Tonleitern}
-    \begin{tabularx}{\textwidth}{|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|>{\hsize=.1\hsize}X|}
+    \begin{tabularx}{\textwidth}{|*{8}{>{\hsize=.1\hsize}X|}}
     \hline
     1. Ton & 2. Ton & 3. Ton & 4. Ton & 5. Ton & 6. Ton & 7. Ton & 8. Ton \\ \hline
     A & \cellcolor{gray!25}H & \cellcolor{gray!25}C & D & \cellcolor{gray!25}E & \cellcolor{gray!25}F & G & A \\ \hline
