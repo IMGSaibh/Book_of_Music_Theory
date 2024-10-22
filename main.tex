@@ -1,8 +1,7 @@
 \documentclass[12pt,a4paper]{scrartcl}
 \usepackage[left=4cm,right=2cm, top=3cm, bottom=3cm]{geometry}
 \usepackage[T1]{fontenc}
-% \usepackage[utf8]{inputenc}
-\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{lmodern}
 \KOMAoption{listof}{entryprefix}
@@ -29,7 +28,6 @@
 
 % =================== - Tables - =====================
 \usepackage{tabularx}
-% \usepackage{colortbl, hhline}
 \usepackage[table]{xcolor}
 % =================== - GRAPHICS - =====================
 \usepackage{float}
@@ -40,10 +38,10 @@
 
 % =============== - MUSIC - =========================
 \usepackage[chorded]{songs} % Paket fuer Akkorddiagramme
+\usepackage{harmony}
 
-% lilyglyphs needs \usepackage{fontspec} to work
-% fontspec needs the xelatex compiler so change in settrings.json
-\usepackage{lilyglyphs}
+
+
 \newcommand{\RomanNumeralCaps}[1]
     {\MakeUppercase{\romannumeral #1}}
 
